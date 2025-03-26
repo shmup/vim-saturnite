@@ -61,7 +61,6 @@ hi FoldColumn guifg=#6c6c6c guibg=NONE gui=NONE cterm=NONE
 hi CursorLine guifg=NONE guibg=#3a3a3a gui=NONE cterm=NONE
 hi CursorColumn guifg=NONE guibg=#3a3a3a gui=NONE cterm=NONE
 hi CursorLineNr guifg=#ffaf5f guibg=NONE gui=bold cterm=bold
-hi QuickFixLine guifg=NONE guibg=#3a3a3a gui=NONE cterm=NONE
 hi SignColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Underlined guifg=#d7af5f guibg=NONE gui=underline cterm=underline
 hi Error guifg=#af5f5f guibg=NONE gui=NONE cterm=NONE
@@ -86,6 +85,10 @@ hi SpellBad guifg=#af5f5f guibg=NONE guisp=#af5f5f gui=undercurl cterm=underline
 hi SpellCap guifg=#d7875f guibg=NONE guisp=#d7875f gui=undercurl cterm=underline
 hi SpellLocal guifg=#af8700 guibg=NONE guisp=#af8700 gui=undercurl cterm=underline
 hi SpellRare guifg=#d7af5f guibg=NONE guisp=#d7af5f gui=undercurl cterm=underline
+hi! link Terminal Normal
+hi! link CursorIM Cursor
+hi! link QuickFixLine Search
+hi! link CurSearch IncSearch
 hi Comment guifg=#87875f guibg=NONE gui=NONE cterm=NONE
 hi Identifier guifg=#8787af guibg=NONE gui=NONE cterm=NONE
 hi Function guifg=#d7af5f guibg=NONE gui=NONE cterm=NONE
@@ -131,7 +134,6 @@ if s:t_Co >= 256
   hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE
   hi CursorColumn ctermfg=NONE ctermbg=237 cterm=NONE
   hi CursorLineNr ctermfg=215 ctermbg=NONE cterm=bold
-  hi QuickFixLine ctermfg=NONE ctermbg=237 cterm=NONE
   hi SignColumn ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Underlined ctermfg=179 ctermbg=NONE cterm=underline
   hi Error ctermfg=131 ctermbg=NONE cterm=NONE
@@ -156,6 +158,10 @@ if s:t_Co >= 256
   hi SpellCap ctermfg=173 ctermbg=NONE cterm=underline
   hi SpellLocal ctermfg=136 ctermbg=NONE cterm=underline
   hi SpellRare ctermfg=179 ctermbg=NONE cterm=underline
+  hi! link Terminal Normal
+  hi! link CursorIM Cursor
+  hi! link QuickFixLine Search
+  hi! link CurSearch IncSearch
   hi Comment ctermfg=101 ctermbg=NONE cterm=NONE
   hi Identifier ctermfg=103 ctermbg=NONE cterm=NONE
   hi Function ctermfg=179 ctermbg=NONE cterm=NONE

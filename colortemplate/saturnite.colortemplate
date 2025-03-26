@@ -84,7 +84,6 @@ FoldColumn       color07    none
 CursorLine       none       color16
 CursorColumn     none       color16
 CursorLineNr     colorC     none                 bold
-QuickFixLine     none       color16
 SignColumn       none       none
 
 Underlined       color11    none underline
@@ -115,6 +114,11 @@ SpellCap         color09    none t=underline g=undercurl s=color09
 SpellLocal       color03    none t=underline g=undercurl s=color03
 SpellRare        color11    none t=underline g=undercurl s=color11
 
+;;;
+Terminal         -> Normal
+CursorIM         -> Cursor
+QuickFixLine     -> Search
+CurSearch        -> IncSearch
 
 ;;; :h group-names
 Comment          colorCom   none
